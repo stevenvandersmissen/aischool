@@ -25,6 +25,7 @@ color:;
     --title-font: "Lora", serif;
     --bg-color: #bad1e1;
     --accent-txt: #545454;
+    --bluey-anchors-visited: white;
 }
 
 *{
@@ -83,6 +84,14 @@ ul li {
 ul li a{
     text-decoration: none;
     font-size: 1.15em;
+}
+
+ul li a:visited{
+    color: var(--bluey-anchors-visited);
+}
+
+.backToMain{
+    margin-top: 2.5rem;
 }
 
 footer{
