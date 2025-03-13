@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Lijst</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --body-font: "Montserrat", sans-serif;
+            --title-font: "Lora", serif;
+            --bg-color: #bad1e1;
+            --accent-txt: #545454;
+            --bluey-anchors-visited: white;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--bg-color);
+            text-align: left; /* Gewijzigd van center naar left */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            min-height: 100vh;
+            padding: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; /* Uitgelijnd naar links */
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-family: var(--title-font);
+            color: white;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-family: var(--title-font);
+            color: var(--accent-txt);
+            padding-bottom: 0.5rem;
+            padding-top: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-family: var(--title-font);
+            color: var(--accent-txt);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-size: 1.15em;
+        }
+
+        .backToMain {
+            margin-top: 2.5rem;
+        }
+
+        footer {
+            font-size: 0.8rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prompt Lijst</h1>
+
+        <h2>Fact Checking</h2>
+        <p>"Controleer de volgende bewering op nauwkeurigheid: [President Trump beweert dat de VS $300-$350bn in steun gedoneerd heeft aan Ukraïne]. Geef een overzicht van de gebruikte bronnen, vermeld relevante data en context, en geef aan of de informatie door meerdere betrouwbare en onafhankelijke bronnen wordt ondersteund. Licht ook eventuele tegenstrijdige informatie toe en geef aan of er recente ontwikkelingen zijn die de bewering beïnvloeden."</p>
+
+        <h2>Gesprek met historisch persoon</h2>
+        <p>Ik wil graag een heen en weer gesprek met je aan gaan, een rollenspel, jij bent [naam historisch persoon] ik wil graag met je praten. Praat zoals [naam historisch persoon] zou praten en gedraag je zoals [naam historisch persoon] zich zou gedragen. Val op geen enkel moment uit je rol.</p>
+
+        <h2>Onderzoeksproject</h2>
+        <p>"Ik wil een onderzoeksproject starten over duurzame energiebronnen. Help me een onderzoeksplan te maken, inclusief onderzoeksvragen en methodologie."</p>
+
+        <h2>Reisbudget-Wizard</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een ervaren reisplanner die tips geeft om voordelig op vakantie te gaan.</li>
+            <li><strong>Taak:</strong> Plan een weekendtrip binnen Nederland voor 2 personen (max. €200), inclusief vervoer, overnachting en activiteiten.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Opties voor vervoer (OV, deelauto) + kostenvergelijking.</li>
+                    <li>Budgetvriendelijke accommodaties en gratis activiteiten (bv. wandelroutes).</li>
+                    <li>Tips om last-minute aanbiedingen te vinden.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Klusjes-Held voor Beginners</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een geduldige klusexpert die uitlegt hoe je kleine huishoudelijke problemen zelf fixt.</li>
+            <li><strong>Taak:</strong> Leg stap voor stap uit hoe je een verstopte afvoer reinigt zonder chemische middelen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Benodigdheden (huishoudelijke materialen).</li>
+                    <li>Genummerde stappen met waarschuwingen (bv. "Gebruik geen kokend water bij PVC").</li>
+                    <li>Alternatieven als het niet lukt.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Tijdreiziger</h2>
+        <p>Neem me mee door de gebeurtenissen van de Franse Revolutie vanuit het perspectief van een burger in die tijd.</p>
+
+        <h2>Snelle Conflictoplosser</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een kalme mediator die helpt bij alledaagse meningsverschillen (bv. tussen collega’s, buren of familieleden).</li>
+            <li><strong>Taak:</strong> Geef 3 tactieken om een discussie over "lawaai in de buurt" respectvol op te lossen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Korte inleiding over actief luisteren.</li>
+                    <li>Genummerde tips met voorbeeldzinnen (bv. "Ik merk dat…" + concrete oplossingen).</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Kookadviseur</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een behulpzame kookadviseur die mensen helpt met het bedenken van eenvoudige, gezonde maaltijden met ingrediënten die makkelijk verkrijgbaar zijn.</li>
+            <li><strong>Taak:</strong> Stel een snelle, voedzame avondmaaltijd samen voor 4 personen. Gebruik maximaal 7 ingrediënten die betaalbaar en gemakkelijk in een supermarkt te vinden zijn. Geef stap-voor-stap instructies voor de bereiding.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Titel van het gerecht</li>
+                    <li>Ingrediënten (lijst met hoeveelheden)</li>
+                    <li>Bereidingswijze (genummerde stappen)</li>
+                    <li>Extra tip voor variatie</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Budgetcoach</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een toegankelijke en begripvolle budgetcoach die duidelijk en eenvoudig advies geeft over geldzaken.</li>
+            <li><strong>Taak:</strong> Geef praktische tips voor het besparen van geld op maandelijkse uitgaven zoals boodschappen, energie en abonnementen. Vermeld ten minste 6 concrete tips die direct toepasbaar zijn in het dagelijks leven.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Introductiezin</li>
+                    <li>Genummerde lijst met bespaartips (elk kort toegelicht met voorbeelden)</li>
+                    <li>Afsluitende tip voor wie meteen wil starten</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Reisplanner</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een vriendelijke reisplanner die mensen helpt om leuke daguitstapjes in de eigen regio te organiseren.</li>
+            <li><strong>Taak:</strong> Geef een idee voor een leuke daguitstap binnen maximaal één uur rijden vanaf huis. Kies een locatie of activiteit die geschikt is voor gezinnen, senioren en jongeren. Beschrijf waarom deze bestemming interessant is, en geef praktische tips voor vervoer, kosten en voorbereiding.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Naam en korte beschrijving van bestemming of activiteit</li>
+                    <li>Waarom geschikt voor diverse leeftijden</li>
+                    <li>Praktische informatie (vervoer, kosten, benodigdheden)</li>
+                    <li>Extra tip voor meer plezier tijdens de uitstap</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Gezondheidsadviseur</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een vriendelijke gezondheidsadviseur die begrijpelijke en haalbare adviezen geeft om gezonder te leven.</li>
+            <li><strong>Taak:</strong> Stel 5 eenvoudige dagelijkse gewoontes voor die helpen om lichamelijk en mentaal fitter te worden. Zorg ervoor dat deze gewoontes makkelijk in te passen zijn in een druk leven en geen extra kosten meebrengen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Korte inleiding waarom deze gewoontes nuttig zijn</li>
+                    <li>Genummerde lijst met gewoontes, elk voorzien van een korte toelichting</li>
+                    <li>Motiverende afsluitende zin om mensen aan te moedigen meteen te beginnen</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Klushulp</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een handige klusexpert die op een eenvoudige manier uitlegt hoe mensen kleine klusjes in huis zelf kunnen aanpakken.</li>
+            <li><strong>Taak:</strong> Leg stap voor stap uit hoe je een schilderij of fotolijst stevig en recht aan de muur ophangt zonder de muur te beschadigen. Benoem duidelijk welk materiaal nodig is en geef tips om fouten te voorkomen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Lijst met benodigdheden (duidelijk opgesomd)</li>
+                    <li>Stap-voor-stap uitleg (genummerde stappen)</li>
+                    <li>Extra handige tip om het werk gemakkelijker te maken</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Klachtenbriefschrijver</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een professionele schrijver die helpt bij het opstellen van nette maar duidelijke klachtenbrieven.</li>
+            <li><strong>Taak:</strong> Schrijf een brief waarin ik vriendelijk maar duidelijk mijn klacht uit over [probleem, bijvoorbeeld defect product of slechte service]. Zorg dat de toon beleefd blijft en dat ik mijn punt goed overbreng. Voeg indien nodig suggesties toe voor hoe het probleem opgelost kan worden.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Aanhef</li>
+                    <li>Korte introductie van het probleem</li>
+                    <li>Beschrijving van wat er fout ging</li>
+                    <li>Suggestie(s) voor oplossing(en)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Verhalenverteller</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een enthousiaste verhalenverteller die mensen helpt hun fantasie tot leven te brengen.</li>
+            <li><strong>Taak:</strong> Bedenk een kort, origineel verhaal waarin drie willekeurige voorwerpen voorkomen: een oude sleutel, een verloren schoen en een mysterieuze brief. Maak het verhaal verrassend en geschikt voor zowel kinderen als volwassenen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Titel van het verhaal</li>
+                    <li>Een korte introductie (wie, waar, wanneer)</li>
+                    <li>Hoofdgebeurtenissen in maximaal 5 duidelijke stappen</li>
+                    <li>Verrassend einde</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Originele feestplanner</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een creatieve feestplanner die mensen inspireert om originele en gezellige buurtactiviteiten te organiseren.</li>
+            <li><strong>Taak:</strong> Stel een idee voor een originele buurtactiviteit voor die mensen van verschillende leeftijden en achtergronden samenbrengt. Zorg ervoor dat de activiteit creatief, haalbaar en betaalbaar is, en gemakkelijk buiten of binnen kan plaatsvinden.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Naam van de activiteit</li>
+                    <li>Korte beschrijving van het doel en de inhoud van de activiteit</li>
+                    <li>Praktische uitvoering (stappenplan of checklist)</li>
+                    <li>Tips om mensen enthousiast te maken en mee te laten doen</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Gedichtenkunstenaar</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een inspirerende dichter die mensen aanzet om hun gevoelens of ideeën op een originele, poëtische manier uit te drukken.</li>
+            <li><strong>Taak:</strong> Schrijf een eenvoudig gedicht van maximaal 8 regels over een alledaags onderwerp zoals regen, koffie, vriendschap of stilte. Maak gebruik van beeldspraak en geef een verrassend inzicht over het gekozen onderwerp.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Titel van het gedicht</li>
+                    <li>Gedicht (maximaal 8 regels)</li>
+                    <li>Korte uitleg of tip hoe deelnemers zelf eenvoudig een gedicht kunnen schrijven</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Uitvinder van de toekomst</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een enthousiaste en innovatieve uitvinder die mensen helpt originele oplossingen te bedenken voor kleine dagelijkse ergernissen.</li>
+            <li><strong>Taak:</strong> Bedenk een grappige of slimme uitvinding die een alledaags probleem oplost, zoals zoekgeraakte sleutels, rondslingerende kabels of vergeetachtigheid. Maak het concept van jouw uitvinding duidelijk met een korte beschrijving en vertel waarom dit handig zou zijn.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Naam van de uitvinding</li>
+                    <li>Beschrijving van het probleem</li>
+                    <li>Hoe werkt jouw uitvinding? (in maximaal 3 stappen)</li>
+                    <li>Humoristische of slimme slogan om mensen enthousiast te maken</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Filmregisseur</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een enthousiaste filmregisseur die mensen helpt een origineel scenario te bedenken voor een korte film.</li>
+            <li><strong>Taak:</strong> Maak een korte samenvatting (synopsis) van een originele film die zich volledig afspeelt in jouw eigen wijk of straat. Bedenk daarbij minstens twee interessante hoofdpersonages en een verrassende plotwending. De film mag maximaal 10 minuten duren.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Titel van de korte film</li>
+                    <li>Korte beschrijving van de setting (wijk of straat)</li>
+                    <li>Beschrijving van de hoofdpersonages</li>
+                    <li>Belangrijkste gebeurtenis of plotwending</li>
+                    <li>Waarom deze film leuk zou zijn om met buren te maken of te bekijken</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Creatieve ideeën voor een buurtactiviteit</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een inspirerende evenementenplanner die met creatieve ideeën komt voor buurtactiviteiten.</li>
+            <li><strong>Taak:</strong> Geef vijf originele ideeën voor een buurtactiviteit die zowel jong als oud aanspreken. Beschrijf kort de kern van elk idee, welke materialen er eventueel voor nodig zijn en hoe de activiteit bijdraagt aan de gemeenschapsvorming.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een korte inleiding</li>
+                    <li>Genummerde lijst met de ideeën, waarbij elk idee duidelijke kopjes en bullet points bevat</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Wervende tekst voor een buurtfeest</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een getalenteerde copywriter die pakkende en enthousiaste teksten schrijft voor buurtfeesten.</li>
+            <li><strong>Taak:</strong> Schrijf een uitnodigende en informatieve tekst voor een buurtfeest. Vermeld daarbij de datum, tijd, locatie en eventuele thema’s of activiteiten. Zorg dat de tekst uitnodigend is en de lezers aanspoort om deel te nemen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een opvallende titel</li>
+                    <li>Kernachtige tekst in alinea’s</li>
+                    <li>Sluit af met contactinformatie of een oproep tot inschrijving</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Quiz over de geschiedenis van de buurt</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een enthousiaste quizmaster die leuke en leerzame quizvragen opstelt.</li>
+            <li><strong>Taak:</strong> Maak een quiz bestaande uit tien vragen over de geschiedenis en bijzondere gebeurtenissen in de buurt. Geef per vraag vier antwoordmogelijkheden en vermeld de juiste antwoorden aan het eind.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Geef eerst de quizvragen in een genummerde lijst met de antwoordopties (A t/m D)</li>
+                    <li>Voeg na de lijst een aparte sectie toe met de correcte antwoorden</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Interactieve spelletjes voor een familie-evenement</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een creatieve spelontwerper die interactieve en toegankelijke spelletjes bedenkt voor een familie-evenement.</li>
+            <li><strong>Taak:</strong> Bedenk drie spelletjes die geschikt zijn voor alle leeftijden tijdens een buurtfeest. Beschrijf per spel het doel, de spelregels en welke materialen er nodig zijn.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Geef een korte inleiding</li>
+                    <li>Daarna een overzicht in genummerde lijst met per spel duidelijke kopjes en bullet points voor de spelregels en benodigdheden</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Actieve social media campagne voor de vereniging</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een deskundige social media marketeer die helpt bij het promoten van buurtactiviteiten.</li>
+            <li><strong>Taak:</strong> Ontwerp een social media campagne om de komende activiteiten van de vereniging te promoten. Geef drie concrete post-ideeën, inclusief hashtags, korte teksten en visuele suggesties (bijvoorbeeld foto’s of illustraties) die de boodschap kracht bijzetten.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een korte introductie</li>
+                    <li>Genummerde lijst met de post-ideeën en per idee een opsomming van de elementen (tekst, hashtags, visuele tips)</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Roadmap voor het leren van een programmeertaal (bijv. Python)</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een ervaren programmeercoach die stapsgewijs uitleg geeft.</li>
+            <li><strong>Taak:</strong> Maak een gedetailleerde roadmap voor beginners om Python te leren. Begin met basisconcepten en werk toe naar meer geavanceerde onderwerpen. Geef per stap een korte uitleg, benodigde leermaterialen en aanbevolen oefenopdrachten.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Gebruik een genummerde lijst per stap, met duidelijke kopjes en bullet points per onderdeel</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Roadmap voor het leren van een nieuwe taal (bijv. Spaans)</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een enthousiaste taaldocent die een stapsgewijs leerplan samenstelt.</li>
+            <li><strong>Taak:</strong> Stel een roadmap op voor iemand die Spaans wil leren, van beginner tot gevorderd niveau. Geef per fase aanbevelingen voor taalcursussen, oefenmaterialen en praktische tips om de taal in de praktijk te brengen (zoals conversatiepartners en apps).</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een overzicht van leerfasen (beginnend, gemiddeld, gevorderd) in een genummerde lijst</li>
+                    <li>Voeg per fase bullet points toe met de details</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Roadmap voor het leren van een muziekinstrument (bijv. gitaar)</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een professionele muziekleraar die een gestructureerd oefenplan maakt.</li>
+            <li><strong>Taak:</strong> Ontwerp een roadmap voor beginners die gitaar willen leren spelen. Beschrijf de belangrijkste technieken, oefeningen en muziekstukken die stap voor stap geoefend moeten worden. Verwijs ook naar nuttige video’s en oefenboeken.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Deel de roadmap op in fases (introductie, basisvaardigheden, gevorderde technieken)</li>
+                    <li>Gebruik een genummerde lijst met bullet points voor de details per fase</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Roadmap voor het ontwikkelen van creatieve schrijfvaardigheden</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een creatieve schrijfcoach die een overzichtelijk en motiverend stappenplan biedt.</li>
+            <li><strong>Taak:</strong> Maak een roadmap voor iemand die zijn creatieve schrijfvaardigheden wil verbeteren. Beschrijf per fase welke technieken en oefeningen belangrijk zijn (bijvoorbeeld: karakters ontwikkelen, plotopbouw, dialoog schrijven) en geef suggesties voor boeken of workshops.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Gebruik een overzichtelijke indeling met een korte introductie</li>
+                    <li>Daarna een genummerde lijst waarin per stap een korte uitleg en concrete tips worden gegeven</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Diepgaand Onderzoek naar de Evolutie van Kunstmatige Intelligentie</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een onderzoeksassistent met expertise in technologie en geschiedenis.</li>
+            <li><strong>Taak:</strong> Analyseer de ontwikkeling van kunstmatige intelligentie vanaf de vroege experimenten tot de huidige geavanceerde modellen. Beschrijf belangrijke mijlpalen, invloedrijke publicaties en trends die de AI-revolutie hebben vormgegeven.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Verdeel je antwoord in secties zoals "Inleiding", "Historische Ontwikkeling", "Belangrijke Mijlpalen" en "Toekomstige Trends", met per sectie bullet points en een samenvattende conclusie</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Vergelijkend Onderzoek naar de Invloed van Sociale Media op Publieke Opinie</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een sociaal wetenschapper en onderzoeksanalist.</li>
+            <li><strong>Taak:</strong> Voer een vergelijkend onderzoek uit naar de invloed van sociale media op de publieke opinie in verschillende culturen. Bespreek verschillen en overeenkomsten, relevante casestudies en de rol van algoritmes in de verspreiding van informatie.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Deel je antwoord op in secties zoals "Onderzoeksvragen", "Methodologie", "Resultaten" en "Discussie", met een combinatie van genummerde lijsten en bullet points</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Diepgravend Literatuuronderzoek naar de Ethische Aspecten van AI</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een academisch onderzoeker gespecialiseerd in ethiek en technologie.</li>
+            <li><strong>Taak:</strong> Voer een uitgebreid literatuuronderzoek uit naar de ethische implicaties van AI in de moderne samenleving. Bespreek verschillende perspectieven, controverses en aanbevelingen uit wetenschappelijke publicaties en casestudies.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Structuur je antwoord in een "Inleiding", "Literatuuroverzicht", "Discussie" en "Conclusie". Gebruik per onderdeel duidelijke kopjes en bullet points om de hoofdpunten samen te vatten</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Actuele Nieuwsupdate</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een nieuwsanalist die de laatste ontwikkelingen in [onderwerp] onderzoekt.</li>
+            <li><strong>Taak:</strong> Zoek en analyseer de meest recente nieuwsberichten over [onderwerp]. Geef een overzicht van de belangrijkste gebeurtenissen en trends, en benoem minstens drie betrouwbare nieuwsbronnen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een korte samenvatting van het nieuws</li>
+                    <li>Genummerde lijst met de belangrijkste punten, inclusief bronvermeldingen</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Vergelijking van Productprijzen</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een consumenteninformatiespecialist die helpt bij het vinden van de beste deals.</li>
+            <li><strong>Taak:</strong> Zoek online naar de huidige prijzen van [productnaam] bij verschillende webshops. Vergelijk de prijzen, verzendkosten en eventuele extra aanbiedingen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Geef eerst een korte introductie over het product</li>
+                    <li>Genummerde lijst met de verkopers, prijzen en kenmerken per aanbieding</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Recente Wetenschappelijke Publicaties</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een onderzoeksassistent die actueel wetenschappelijk onderzoek bijhoudt.</li>
+            <li><strong>Taak:</strong> Zoek de meest recente wetenschappelijke artikelen en publicaties over [onderwerp]. Geef een overzicht van de belangrijkste bevindingen, en noem de namen van de auteurs en publicatiedata.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een korte inleiding over het belang van het onderwerp</li>
+                    <li>Genummerde lijst met per artikel de titel, auteur(s), publicatiedatum en een korte samenvatting van de bevindingen</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Trends op Sociale Media</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een social media expert die trends en discussies op verschillende platformen analyseert.</li>
+            <li><strong>Taak:</strong> Zoek naar de nieuwste trends en discussies op sociale media met betrekking tot [onderwerp]. Benoem de populairste hashtags, influentials en eventuele opvallende meningen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Geef eerst een korte overzichtelijke inleiding</li>
+                    <li>Genummerde lijst met de belangrijkste trends, hashtags en een korte toelichting per item</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Evenementenkalender en Activiteiten</h2>
+        <ul>
+            <li><strong>Rol:</strong> Je bent een lokale evenementencoördinator die mensen op de hoogte houdt van aankomende activiteiten.</li>
+            <li><strong>Taak:</strong> Zoek online naar de meest recente evenementenkalenders voor [stad/regio]. Geef een overzicht van de komende activiteiten, zoals festivals, markten of sportevenementen, met data, locaties en korte beschrijvingen.</li>
+            <li><strong>Formaat:</strong>
+                <ul>
+                    <li>Begin met een korte introductie over de lokale evenementen</li>
+                    <li>Overzichtelijke lijst of tabel met per activiteit de datum, locatie en beschrijving</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
